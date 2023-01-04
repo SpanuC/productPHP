@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+
+    RewriteRule ^$ view/ProductList.php [NC,L]
+    RewriteRule ^addproduct view/ProductAdd.php [NC,L]
+    RewriteRule ^([^\.]+)$ $1.php [NC,L]
+</IfModule>

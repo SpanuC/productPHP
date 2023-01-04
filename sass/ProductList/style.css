@@ -1,0 +1,194 @@
+#app {
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url(../../fonts/Lato-Light.ttf);
+}
+html,
+body,
+span,
+h4,
+a,
+p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  overflow: overlay;
+  overflow-x: hidden;
+}
+
+p,
+span {
+  overflow: hidden;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  top: 0;
+  width: 100vw;
+  height: 100%;
+  z-index: 1;
+}
+.body .productList_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+  position: relative;
+  background: #dee2e6;
+  box-shadow: 12px 0 15px -4px #ced4da, -12px 0 15px -4px #ced4da;
+}
+.body .productList_form .header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 10vh;
+  border-bottom: 3px solid rgb(36, 36, 36);
+  background: #e9ecef;
+}
+.body .productList_form .header .title {
+  margin-right: auto;
+  margin: 0 1em;
+  position: relative;
+  align-self: center;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  text-shadow: 0.3px 0.3px 0.7px black;
+  color: rgb(21, 21, 21);
+}
+.body .productList_form .header .buttons {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  align-items: center;
+}
+.body .productList_form .header .buttons .button {
+  display: block;
+  transition: 0.5s;
+  border: none;
+  background-color: #3ed14c;
+  color: rgb(231, 231, 231);
+  justify-self: center;
+  font-size: 1em;
+  font-family: "Lato", sans-serif;
+  width: auto;
+  height: auto;
+  position: relative;
+  cursor: pointer;
+  border-radius: 0.4em;
+  font-weight: bold;
+}
+.body .productList_form .header .buttons .button:last-child {
+  margin: 0 1em;
+  background-color: #bf0603;
+}
+.body .productList_form .header .buttons .button:hover {
+  background-color: #228d00;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 0.6em;
+  border: 1px solid rgb(72, 72, 72);
+}
+.body .productList_form .header .buttons .button:last-child:hover {
+  background-color: #8d0801;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 0.6em;
+}
+.body .productList_form .container-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 70vh;
+}
+.body .productList_form .container-body .container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, 12em);
+  grid-gap: 0.7em;
+  width: 100%;
+  min-height: 40vh;
+  height: auto;
+  background-color: #dee2e6;
+  position: relative;
+  margin: 1em;
+}
+.body .productList_form .container-body .container .empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 70vw;
+  min-height: 70vh;
+}
+.body .productList_form .container-body .container .container-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #adb5bd;
+  margin: 1em;
+}
+.body .productList_form .container-body .container .container-product .delete-checkbox {
+  display: flex;
+  align-self: flex-start;
+  justify-content: start;
+  position: absolute;
+  padding-left: 1em;
+  padding-top: 1em;
+}
+.body .productList_form .container-body .container .container-product .text-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.body .productList_form .container-body .container .container-product .text-group .text {
+  position: relative;
+  align-self: center;
+  font-family: "Lato", sans-serif;
+  font-size: 1.1em;
+  text-shadow: 0.3px 0.3px 0.7px rgba(0, 0, 0, 0.5764705882);
+  color: rgb(0, 0, 0);
+}
+.body .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 30vh;
+  border-top: 3px solid rgb(36, 36, 36);
+  background: #ced4da;
+}
+.body .footer .text {
+  margin: 1em 0 0.3em 0.1em;
+  position: relative;
+  font-family: "Lato", sans-serif;
+  font-size: 1.5em;
+  text-shadow: 0.3px 0.3px 0.7px black;
+  color: rgb(21, 21, 21);
+}
+
+/*# sourceMappingURL=style.css.map */
